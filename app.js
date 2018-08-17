@@ -1,3 +1,6 @@
+import utils from '/utils/utils.js'
+const URL = "zfb/member/getUserInfo" // token传参获取用户信息
+
 App({
   onLaunch(options) {
     // 第一次打开
@@ -10,15 +13,16 @@ App({
     console.log(token, 14)
     if (token && token.data!= undefined) {
       console.log(token,16)
+      let data = token.data
+      let authToken = Object.assign({ authToken: data });
       my.httpRequest({
         url: 'http://test.yoodex.net/zfb/member/getUserInfo', // 获取用户信息
-        data: token,
+        data: authToken,
         method: 'POST',
         success: (res) => {
-          console.log(res, res.data.userId, 52)
+          console.log(res, res.data.userId, 23)
         }
       })
-      this.getUserInfo()
     }else{
         my.getAuthCode({
           scopes: 'auth_user',
@@ -64,20 +68,20 @@ App({
     // options.query == {number:1}
   },
 
-  getUserInfo(cb){
-    let token = my.getStorageSync({ key: 'authToken' })
-    let data = token.data
-    let authToken = Object.assign({ authToken: data });
-    my.httpRequest({
-        url: 'http://test.yoodex.net/zfb/member/getUserInfo', // 获取用户信息
-        data: authToken,
-        method: 'POST',
-        success: (res) => {
-          console.log(res, res.data.userId, 52)
-        }
-      })
-  },
+  //  getUserInfo(cb){
+  //   let token = my.getStorageSync({ key: 'authToken' })
+  //   let data = token.data
+  //   let authToken = Object.assign({ authToken: data });
+  //   my.httpRequest({
+  //       url: 'http://test.yoodex.net/zfb/member/getUserInfo', // 获取用户信息
+  //       data: authToken,
+  //       method: 'POST',
+  //       success: (res) => {
+  //         console.log(res, res.data.userId, 52)
+  //       }
+  //     })
+  // },
+
   globalData:{
-    userInfo: null
   }
 });

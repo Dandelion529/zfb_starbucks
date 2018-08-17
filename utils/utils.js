@@ -1,25 +1,30 @@
-import page from './page.js'
-const api = require('../common/api.js');
+
+const api = require('../common/app.js');
 // 封装支付宝小程序请求
 export default {
-	apiRequest(method, url, params, header = {}, defaultLoading = true){
+  apiData: {
+    host: "http://test.yoodex.net/" // 请求环境
+  },
+
+	apiRequest(method, url, params, header = {}){
+    const {host} = this.apiData
 		return new Promise((resolve, reject) => {
-			if (defaultLoading) {
-		      	my.showLoading({
-		        	title: 'loading',
-		        	mask:true,
-		     	});
-		    }
+			// if (defaultLoading) {
+		  //     	my.showLoading({
+		  //       	title: 'loading',
+		  //       	mask:true,
+		  //    	});
+		  //   }
 			my.httpRequest({
-				url:url,
+				url: `${host}${url}`,
 				method: method,
 				data: params,
-				header: {
-					'authToken': my.getStorageSync('authToken'),
-				},
+				// header: {
+				// 	
+				// },
 				success: res =>{
 					console.log(res,21)
-					my.hideLoading()
+					// my.hideLoading()
 					// 判断返回的code状态
 				},
 				fail:({data}) =>{
@@ -42,17 +47,17 @@ export default {
       return this.apiRequest('GET', url, params, header)
     },
 
-    post(url, params = {}, header = {}) {
+  post(url, params = {}, header = {}) {
       return this.apiRequest('POST', url, params, header)
-    },
+  },
 
-    put(url, params = {}, header = {}) {
+  put(url, params = {}, header = {}) {
       return this.apiRequest('PUT', url, params, header)
-    },
+  },
 
-    delete(url, params = {}, header = {}) {
+  delete(url, params = {}, header = {}) {
       return this.apiRequest('DELETE', url, params, header)
-    },
+  },
 
     // 毫秒转换成时分秒
     formatDuring (mss) {

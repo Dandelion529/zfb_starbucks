@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="title">礼品卡详情</view>
+    <view class="cardContent flex-x">
+        <view class="left">
+            <view class="house">适用门店：</view>
+            <view>可用阶段：</view>
+            <view>使用须知：</view>
+        </view>
+        <view class="right">
+            <view>查看全部门店</view>
+            <view>2018.08.17-2020.08.17</view>
+            <view>{{summary}}</view>
+        </view>
+    </view>
+</view>

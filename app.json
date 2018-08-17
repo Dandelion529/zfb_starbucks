@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/card/card"
+  ],
+  "window": {
+    "defaultTitle": "My App",
+    "backgroundColor": "#f0eff5"
+  }
+}

@@ -1,0 +1,15 @@
+page {
+  flex: 1;
+  display: flex;
+  background: #f7f7f7;
+}
+.flex-x {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.align-center {
+  display: flex;
+  align-items: center
+}

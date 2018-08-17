@@ -1,0 +1,39 @@
+
+.container {
+    width: 100%;
+    padding: 20rpx;
+    font-family: "MicrosoftYaHei";
+}
+
+.title {
+  color: #000000;
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+  padding: 30rpx 0rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.cardContent {
+    padding: 15rpx;
+}
+
+.left {
+    width: 25%;
+    line-height: 50rpx;
+    font-size: 28rpx;
+}
+
+.right {
+    flex: 1;
+    color: #a8a8a8;
+    line-height: 50rpx;
+    font-size: 28rpx;
+}
+
+/* .right>view {
+    margin-bottom: 20rpx;
+} */
+
+.house {
+
+}

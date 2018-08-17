@@ -1,0 +1,59 @@
+<view class="container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block a:for="{{imgUrls}}">
+            <swiper-item>
+                <image src="{{item.img}}" class="slide-image" mode="aspectFill" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="contentCard">
+        <text class="indexText">请朋友们喝咖啡</text>
+        <view class="flex-x" onTap="bindViewTap">
+            <view class="photoBox">
+                <image class="photo" src="../../images/index_coffeeOnMe.png" />
+                <text class="photoText">@all 我想对你们说</text>
+            </view>
+            <view class="photoBox">
+                <image class="photo" src="../../images/index_wellDone.png" />
+                <text class="photoText">@all 给特别的你们</text>
+            </view>
+        </view>
+    </view>
+    <view class="contentCard">
+        <text class="indexText">星礼卡表心意</text>
+            <scroll-view 
+                class="scroll-view_H" 
+                scroll-x="{{true}}" 
+                scroll-with-animation="{{animation}}"
+
+                >
+                <view class="scroll-photoBox">
+                    <image class="photo"  src="../../images/index1.png" />
+                </view>
+                <view class="scroll-photoBox" >
+                    <image class="photo"  src="../../images/index8.png" />
+                </view>
+                <view class="scroll-photoBox">
+                    <image class="photo"  src="../../images/index3.png" />
+                </view>
+                <view class="scroll-photoBox">
+                    <image class="photo"  src="../../images/index4.png" />
+                </view>
+                <view class="scroll-photoBox">
+                    <image class="photo"  src="../../images/index5.png" />
+                </view>
+                <view class="scroll-photoBox">
+                    <image class="photo"  src="../../images/index6.png" />
+                </view>
+                <view class="scroll-photoBox">
+                    <image class="photo"  src="../../images/index7.png" />
+                </view>
+                <view class="scroll-photoBox">
+                    <image class="photo"  src="../../images/index8.png" />
+                </view>
+            </scroll-view>
+    </view>
+    <view>
+        <button type="default" size="defaultSize" onTap="onShareAppMessage"> Button </button>
+    </view>
+</view>

@@ -185,21 +185,47 @@ Page({
     this.getTotalPrice();
   },
   
-  // 支付
-  pay(){
-    my.tradePay({
-      orderStr: 'myOrderStr', // 完整的支付参数拼接成的字符串，从服务端获取
-      success: (res) => {
-        console.log(res,192)
-        my.alert({
-          content: JSON.stringify(res)
-        });
-      },
-      fail:(res)=>{
-         my.alert({
-          content: JSON.stringify(res)
-        });
-      }
-    });
+  getPay(){
+    console.log('pay')
+      let totalAmount = Object.assign({ totalAmount: '0.01' });
+      console.log(totalAmount,191)
+      my.httpRequest({
+        url: 'http://test.yoodex.net/zfb/member/getOrderStr', // 目标服务器url
+        method: 'POST',
+        data: totalAmount,
+        success: (res) => {
+          console.log(res,res.data,192)
+          my.tradePay({
+            orderStr: res.data, // 完整的支付参数拼接成的字符串，从服务端获取
+            success: (res) => {
+              console.log(res,200)
+            },
+            fail:(res)=>{
+              console.log(res,207)
+            }
+          });
+        },
+        fail:(res)=>{
+          console.log(res,213)
+        }
+      });
   },
+
+  // 支付
+  // pay(){
+  //   my.tradePay({
+  //     orderStr: 'myOrderStr', // 完整的支付参数拼接成的字符串，从服务端获取
+  //     success: (res) => {
+  //       console.log(res,res.resultCode,192)
+  //       my.alert({
+  //         content: JSON.stringify(res)
+  //       });
+  //     },
+  //     fail:(res)=>{
+  //        my.alert({
+  //         content: JSON.stringify(res)
+  //       });
+  //     }
+  //   });
+  // },
 });

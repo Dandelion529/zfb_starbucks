@@ -29,7 +29,6 @@ Page({
   onLoad(query) {
     // 页面加载
     console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
-
   },
 
   bindViewTap(){
@@ -40,10 +39,11 @@ Page({
 
   onShareAppMessage() {
     console.log('aaa')
+    // my.canIUse('button.open-type.share') 
     return {
-      title: '小程序示例',
+      title: '小程序分享',
       desc: '小程序官方示例Demo，展示已支持的接口能力及组件。',
-      path: 'page/index/index'
+      path: 'pages/detail/detail'
     };
   },
 });

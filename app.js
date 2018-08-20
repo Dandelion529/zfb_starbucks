@@ -10,11 +10,11 @@ App({
     
     // 获取缓存token
     let token = my.getStorageSync({ key: 'authToken' })
-    console.log(token, 14)
     if (token && token.data!= undefined) {
       console.log(token,16)
       let data = token.data
       let authToken = Object.assign({ authToken: data });
+      console.log(authToken,17)
       my.httpRequest({
         url: 'http://test.yoodex.net/zfb/member/getUserInfo', // 获取用户信息
         data: authToken,

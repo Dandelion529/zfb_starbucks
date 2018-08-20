@@ -25,7 +25,6 @@
                 class="scroll-view_H" 
                 scroll-x="{{true}}" 
                 scroll-with-animation="{{animation}}"
-
                 >
                 <view class="scroll-photoBox">
                     <image class="photo"  src="../../images/index1.png" />
@@ -54,6 +53,6 @@
             </scroll-view>
     </view>
     <view>
-        <button type="default" size="defaultSize" onTap="onShareAppMessage"> Button </button>
+        <!-- <button type="default" size="defaultSize" onTap="defaultTap"> Button </button> -->
     </view>
 </view>

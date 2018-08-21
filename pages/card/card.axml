@@ -12,4 +12,8 @@
             <view>{{summary}}</view>
         </view>
     </view>
+    <view style="margin:20rpx 0rpx">
+        门店详情：
+        <button style="margin:20rpx 0rpx" type="" size="defaultSize" onTap="mapPage">进入详情 </button>
+    </view>
 </view>

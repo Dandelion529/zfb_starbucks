@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/detail/detail",
-    "pages/card/card"
+    "pages/card/card",
+    "pages/map/map"
   ],
   "window": {
     "defaultTitle": "My App",

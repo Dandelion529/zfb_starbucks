@@ -14,13 +14,12 @@ App({
       console.log(token,16)
       let data = token.data
       let authToken = Object.assign({ authToken: data });
-      console.log(authToken,17)
       my.httpRequest({
         url: 'http://test.yoodex.net/zfb/member/getUserInfo', // 获取用户信息
         data: authToken,
         method: 'POST',
         success: (res) => {
-          console.log(res, res.data.userId, 23)
+          // console.log(res, res.data.userId, 23)
         }
       })
     }else{

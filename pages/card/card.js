@@ -6,8 +6,13 @@ Page({
 
   },
   onReady: function () {
-   my.setNavigationBarTitle({
-      title: '礼品卡详情'
-    })
+   my.setNavigationBar({
+     title: '礼品卡详情'
+   }); 
+  },
+  mapPage(){
+    my.navigateTo({
+      url:'../map/map'
+    });
   },
 })

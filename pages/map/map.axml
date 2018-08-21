@@ -1,0 +1,10 @@
+
+<view class="container">
+    <view style="width:100%;margin-bottom:20rpx">
+        <button type="default" size="defaultSize" onTap="getLocation"> 获取位置 </button>
+        <button type="default" size="defaultSize" onTap="chooseLocation"> 修改当前地理位置 </button>
+    </view>
+    <view style="width:100%;height:300rpx">
+        <map id="myMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{mapcontrols}}" onControlTap="controltap" markers="{{markers}}" onMarkerTap="markertap"     show-location></map>
+    </view>
+</view>

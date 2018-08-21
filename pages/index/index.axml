@@ -21,38 +21,36 @@
     </view>
     <view class="contentCard">
         <text class="indexText">星礼卡表心意</text>
-            <scroll-view 
-                class="scroll-view_H" 
-                scroll-x="{{true}}" 
-                scroll-with-animation="{{animation}}"
-                >
-                <view class="scroll-photoBox">
-                    <image class="photo"  src="../../images/index1.png" />
-                </view>
-                <view class="scroll-photoBox" >
-                    <image class="photo"  src="../../images/index8.png" />
-                </view>
-                <view class="scroll-photoBox">
-                    <image class="photo"  src="../../images/index3.png" />
-                </view>
-                <view class="scroll-photoBox">
-                    <image class="photo"  src="../../images/index4.png" />
-                </view>
-                <view class="scroll-photoBox">
-                    <image class="photo"  src="../../images/index5.png" />
-                </view>
-                <view class="scroll-photoBox">
-                    <image class="photo"  src="../../images/index6.png" />
-                </view>
-                <view class="scroll-photoBox">
-                    <image class="photo"  src="../../images/index7.png" />
-                </view>
-                <view class="scroll-photoBox">
-                    <image class="photo"  src="../../images/index8.png" />
-                </view>
-            </scroll-view>
+        <scroll-view class="scroll-view_H" scroll-x="{{true}}" scroll-with-animation="{{animation}}">
+            <view class="scroll-photoBox">
+                <image class="photo" src="../../images/index1.png" />
+            </view>
+            <view class="scroll-photoBox">
+                <image class="photo" src="../../images/index8.png" />
+            </view>
+            <view class="scroll-photoBox">
+                <image class="photo" src="../../images/index3.png" />
+            </view>
+            <view class="scroll-photoBox">
+                <image class="photo" src="../../images/index4.png" />
+            </view>
+            <view class="scroll-photoBox">
+                <image class="photo" src="../../images/index5.png" />
+            </view>
+            <view class="scroll-photoBox">
+                <image class="photo" src="../../images/index6.png" />
+            </view>
+            <view class="scroll-photoBox">
+                <image class="photo" src="../../images/index7.png" />
+            </view>
+            <view class="scroll-photoBox">
+                <image class="photo" src="../../images/index8.png" />
+            </view>
+        </scroll-view>
     </view>
     <view>
-        <!-- <button type="default" size="defaultSize" onTap="defaultTap"> Button </button> -->
+        <button type="default" size="defaultSize" onTap="scanCode"> 扫码 </button>
+        <!-- <button type="default" size="defaultSize" onTap="getLocation"> 获取位置 </button>
+        <button type="default" size="defaultSize" onTap="chooseLocation"> 修改当前地理位置 </button> -->
     </view>
 </view>

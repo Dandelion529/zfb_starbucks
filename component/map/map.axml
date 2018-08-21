@@ -1,0 +1,11 @@
+<map 
+    id="map"
+    longitude="{{longitude}}" 
+    latitude="{{latitude}}" 
+    scale="{{scale}}"
+    controls="{{controls}}"
+    markers="{{markers}}"
+    onControlTap="controltap"
+    onMarkerTap="markertap"
+    show-location>
+</map>

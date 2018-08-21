@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/detail/detail",
     "pages/card/card",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/pic/pic"
   ],
   "window": {
     "defaultTitle": "My App",

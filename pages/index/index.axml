@@ -50,7 +50,5 @@
     </view>
     <view>
         <button type="default" size="defaultSize" onTap="scanCode"> 扫码 </button>
-        <!-- <button type="default" size="defaultSize" onTap="getLocation"> 获取位置 </button>
-        <button type="default" size="defaultSize" onTap="chooseLocation"> 修改当前地理位置 </button> -->
+        <button style="margin-top:20rpx" type="default" size="defaultSize" onTap="imgPage"> 图片 </button>
     </view>
-</view>

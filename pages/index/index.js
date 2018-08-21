@@ -79,6 +79,13 @@ Page({
     });
   },
 
+  // 跳转到图片
+  imgPage: function(){
+    my.navigateTo({
+      url: '/pages/pic/pic'
+    });
+  },
+
 
   bindViewTap(){
     my.navigateTo({

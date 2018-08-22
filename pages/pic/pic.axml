@@ -9,12 +9,13 @@
                 </view>
             </view>
         </block>
-        <view class="addImgBox" onTap="addImg" a:if="{{canAddImg}}">
+        <view class="addImgBox" onTap="preView" a:if="{{canAddImg}}">
             <text>{{addImgText}}</text>
         </view>
     </view>
     <view>
+        <button type="default" size="defaultSize" onTap="addImg"> 上传图片 </button>
         <button type="default" onTap="toUploadImg" class="uploadImgBtn"> 提交 </button>
+        <!-- <button type="default" onTap="toUploadImg" class="uploadImgBtn"> 提交 </button> -->
     </view>
 </view>
-<!-- <view class="allImgBox"><block a:for="{{imgUrls}}" a:key="{{item}}" a:index="{{index}}" name="{{file}}" id="{{file}}"><view class="imgBox"><image src="{{item}}"></image><view data-index="{{index}}" onTap="delImg" class="delImg"><icon type="cancel" color="red" size="18" /></view></view></block><view class="addImgBox" onTap="addImg" a:if="{{canAddImg}}"><text>{{addImgText}}</text></view></view><view class="photo-attention"><view>照片要求:</view><view>1. 最多六张</view><view>2. XXXXXXXXXXX XXXXXXXXXXX</view></view>

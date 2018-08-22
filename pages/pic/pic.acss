@@ -3,18 +3,63 @@
     height: 100%;
     background-color: #f5f5f5;
 }
+
 .title{
     margin: 20rpx 10rpx;
     font-size: 36rpx;
 }
 
-.h1 { margin: 0.2rem 0.25rem 0; font-size: 16px }
+.uploadImgBtn { 
+    /* width: 400rpx;  */
+    width: 100%;
+    border: none; 
+    background-color: #0c9; 
+    color: #fff; 
+    margin: 40rpx auto 0; 
+    border-radius: 10rpx 
+}
 
-.uploadImgBtn { width: 4rem; border: none; background-color: #0c9; color: #fff; margin: 0.4rem auto 0; border-radius: 1rem }
-.allImgBox { width: 740rpx; margin-top: 30rpx }
-.imgBox, .addImgBox { display: inline-block; width: 140rpx; height: 140rpx; position: relative; margin: 0 22rpx 35rpx; vertical-align: middle }
+.allImgBox {
+    width: 740rpx;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+    
+.imgBox, .addImgBox { 
+    display: inline-block; 
+    width: 140rpx; 
+    height: 140rpx; 
+    position: relative;
+    margin: 0 22rpx 35rpx; 
+    vertical-align: middle
+}
+
 .imgBox image,
-.addImgBox text { width: 140rpx; height: 140rpx; border: 2rpx dotted #aaa }
-.imgBox .delImg { position: absolute; top: -20rpx; right: -20rpx; height: 18px; overflow: visible }
-.addImgBox text { display: inline-block; line-height: 140rpx; text-align: center; font-size: 24rpx; color: #aaa }
-.photo-attention { color: #333333; font-size: 0.3rem; line-height: 0.5rem; padding: 0 25rpx }
+.addImgBox text { 
+    width: 140rpx; 
+    height: 140rpx; 
+    border: 2rpx dotted #aaa 
+}
+
+.imgBox .delImg { 
+    position: absolute;
+    top: -20rpx; 
+    right: -20rpx; 
+    height: 18px; 
+    overflow: visible
+}
+
+.addImgBox text {
+    display: inline-block;
+    line-height: 140rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #aaa 
+}
+
+.photo-attention { 
+    color: #333333;
+    font-size: 30rpx; 
+    line-height: 50rpx; 
+    padding: 0 25rpx 
+}
